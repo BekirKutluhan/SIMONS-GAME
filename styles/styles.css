@@ -57,7 +57,7 @@ h1{
 #widthOfContainer{
   width: 65%;
 }}
-@media only screen and (min-width: 830px){
+@media only screen and (min-width: 1000px){
 #widthOfContainer{
   width: 55%;
 }
@@ -69,7 +69,7 @@ h1{
 #widthOfContainer{
   width: 35%;
 }}
-@media (max-width:830px){
+@media (max-width:1000px){
 #buttonMobile{
   visibility: visible;
 }
