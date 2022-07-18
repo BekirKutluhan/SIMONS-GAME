@@ -112,7 +112,7 @@ colorWillPlayed.play();
 }
 
 /////////////////*********************////////////////////
-$("#buttonMobile").on("tap",startTheGame);
+$("#buttonMobile").on("touchstart",startTheGame);
   $(document).on("keypress",startTheGame);
 //////////////////////*****************/////////////////////
 
