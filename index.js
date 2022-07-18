@@ -128,6 +128,7 @@ function gameOver(){
   }
   level = 0;
   $("h1").text("Game Over Please Press A Key To Restart")
+    $("#buttonMobile").text("Game Over Please Press A Key To Restart")
   wrongAudio.play();
   $("body").css("background-color","red");
   setTimeout(function () {
