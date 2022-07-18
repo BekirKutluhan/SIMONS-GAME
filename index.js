@@ -9,7 +9,7 @@ var redAudio = new Audio("sounds/red.mp3")
 var wrongAudio = new Audio("sounds/wrong.mp3")
 const audiosArray = [greenAudio,redAudio,yellowAudio,blueAudio];
 var userClickedPattern = [];
-var level = 0;
+var level = 1;
 var gameStarted = false;
 var userTurn = false;
 var gameTurn = false;
@@ -26,7 +26,7 @@ var gameEnded = false;
 
   $(document).click(function(){
     if(gameEnded){
-    var userChosenColour =event.target.classList[2];
+    var userChosenColour =event.target.classList[3];
     if(userChosenColour != undefined){
       wrongAudio.play();
       $("body").css("background-color","red");
@@ -40,7 +40,7 @@ var gameEnded = false;
   $(document).click("click",function(){
 if(userTurn){
 console.log("UserClickIn : "+userClickCounter);
-        var userChosenColour =event.target.classList[2];
+        var userChosenColour =event.target.classList[3];
             if(userChosenColour == undefined){
               $(document).one("click",document,userClick)
               return;}

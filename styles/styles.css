@@ -31,11 +31,18 @@ h1{
   background-color: blue;
 }
 #widthOfContainer{
-  width: 40%;
+  width: 80%;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 700px){
 #widthOfContainer{
-  width: 30%;
-}
-}
+  width: 65%;
+}}
+@media only screen and (min-width: 800px){
+#widthOfContainer{
+  width: 55%;
+}}
+@media only screen and (min-width: 1700px) and (max-width: 2500px) {
+#widthOfContainer{
+  width: 35%;
+}}
