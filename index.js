@@ -88,6 +88,7 @@ function nextSequence(){
     nextSequenceCounter++;
       console.log("nextSequence in : " +nextSequenceCounter );
       $("h1").text("level "+level);
+      $("#buttonMobile").text("level "+level);
       randomNumber = Math.floor(Math.random()*4);
       randomChosenColour = buttonColours[randomNumber];
       gamePattern.push(randomChosenColour);
