@@ -22,7 +22,15 @@ var levelCompleted = false;
 var gameEnded = false;
 
 
-
+function startTheGame(){
+  while(!gameStarted){
+      console.log("gameStartedIn");
+      gameEnded=false;
+        gameStarted = true;
+        gameTurn = true;
+        nextSequence();
+  }
+}
 
   $(document).click(function(){
     if(gameEnded){
@@ -104,17 +112,8 @@ colorWillPlayed.play();
 }
 
 /////////////////*********************////////////////////
-
-  $(document).keypress(function(){
-while(!gameStarted){
-    console.log("gameStartedIn");
-    gameEnded=false;
-      gameStarted = true;
-      gameTurn = true;
-      nextSequence();
-}
-});
-
+$("#buttonMobile").on("tap",startTheGame);
+  $(document).on("keypress",startTheGame);
 //////////////////////*****************/////////////////////
 
 function gameOver(){

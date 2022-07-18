@@ -2,11 +2,14 @@ body{
   background-color:#0d326e;
   text-align: center;
   padding: 5%;
+  padding-top: 200px;
+
 }
 h1{
   font-family: 'Press Start 2P', cursive;
   font-size: 2rem;
-  margin-bottom: 50px;
+  margin-bottom: 150px;
+  padding-right:150px;
   color:white;
 }
 
@@ -30,6 +33,22 @@ h1{
 .Blue{
   background-color: blue;
 }
+/*******************                  ID             *************************/
+#buttonMobile{
+  width: 200px;
+  height: 200px;
+  color: white;
+  border-radius: 20%;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 2rem;
+  background-color: black;
+  border: 10px solid black;
+  text-align: center;
+  visibility: hidden;
+  display:inline-block;
+  width: 50%;
+}
+
 #widthOfContainer{
   width: 80%;
 }
@@ -38,11 +57,23 @@ h1{
 #widthOfContainer{
   width: 65%;
 }}
-@media only screen and (min-width: 800px){
+@media only screen and (min-width: 830px){
 #widthOfContainer{
   width: 55%;
-}}
+}
+h1{
+  visibility:visible;
+}
+}
 @media only screen and (min-width: 1700px) and (max-width: 2500px) {
 #widthOfContainer{
   width: 35%;
 }}
+@media (max-width:830px){
+#buttonMobile{
+  visibility: visible;
+}
+h1{
+  visibility: hidden;
+}
+}
