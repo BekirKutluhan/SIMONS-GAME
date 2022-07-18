@@ -18,15 +18,24 @@ h1{
   border:10px solid black;
   margin:25px;
 }
-.green{
+.Green{
   background-color: green;
 }
-.red{
+.Red{
   background-color: red;
 }
-.yellow{
+.Yellow{
   background-color: yellow;
 }
-.blue{
+.Blue{
   background-color: blue;
+}
+#widthOfContainer{
+  width: 40%;
+}
+
+@media only screen and (min-width: 1300px) {
+#widthOfContainer{
+  width: 30%;
+}
 }
